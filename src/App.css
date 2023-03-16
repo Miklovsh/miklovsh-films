@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url(../src/bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Header,
+.Footer {
+  background-color: #f1f1f1;
+}
+
+.header__wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  max-width: 400px;
+}
+
+.logo svg {
+  max-width: 26px;
+  max-height: 26px;
+}
+
+.logo-text {
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ED1B24;
+  text-align: center;
+}
+
+
+.header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__search-btn {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__search-btn svg {
+  width: 25px;
+  height: 25px;
+}
+
+.header__search-input {
+  font-family: 'Rowdies', cursive;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  border-bottom: 3px solid #ED1B24;
+  max-width: 300px;
+  height: 30px;
+  outline: none;
+  padding: 15px;
+  color: #ED1B24;
+}
+
+.header__search-input::placeholder {
+  font-family: 'Rowdies', cursive;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ED1B24;
+}
+
+.header__favorite {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__favorite svg {
+  width: 35px;
+  height: 35px;
+}
+
+
+.Main {
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  min-height: calc(100vh - 74px);
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.movies-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 360px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 25px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px 2px rgb(237, 27, 36, 0.7),
+    0px 4px 12px 2px rgb(237, 27, 36, 0.7),
+    0px 4px 12px 2px rgb(237, 27, 36, 0.7),
+    0px 4px 12px 2px rgb(237, 27, 36, 0.7)
+}
+
+
+.movies-card__title-link {
+  text-decoration: none;
+  color: #f1f1f1;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.movies-card__title-link:hover {
+  color: #ED1B24;
+  transition: all 2s;
+}
+
+.movies-card__title {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.movies-card__favorite-add {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  fill: #ffff;
+}
+
+.movies-card__favorite-add svg {
+  width: 25px;
+  height: 25px;
+}
+
+.movies-card__favorite-add:hover {
+  fill: #ED1B24;
+  transition: all 2s;
+}
+
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__name {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.footer__name-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ED1B24;
+}
+
+.footer__name-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ED1B24;
+  text-decoration: none;
+  padding-left: 3px;
+}
+
+.footer__name-link:hover {
+  color: black;
+  transition: all 2s;
+}
