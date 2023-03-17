@@ -52,7 +52,6 @@ body {
   text-align: center;
 }
 
-
 .header__search {
   display: flex;
   align-items: center;
@@ -114,8 +113,9 @@ body {
   height: 35px;
 }
 
-
-.Main {
+.Main,
+.Movies-favorites,
+.Movie-details {
   max-width: 1200px;
   padding-left: 10px;
   padding-right: 10px;
@@ -123,7 +123,8 @@ body {
   min-height: calc(100vh - 74px);
 }
 
-.main__wrapper {
+.main__wrapper,
+.movies-favorites__wrapper {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -149,7 +150,6 @@ body {
     0px 4px 12px 2px rgb(237, 27, 36, 0.7),
     0px 4px 12px 2px rgb(237, 27, 36, 0.7)
 }
-
 
 .movies-card__title-link {
   text-decoration: none;
@@ -194,6 +194,106 @@ body {
   transition: all 2s;
 }
 
+.movies-favorites__message {
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #f1f1f1;
+  margin-top: 300px;
+}
+
+.movie-details__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Lato', sans-serif;
+  color: #f1f1f1;
+}
+
+.movie-details__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  max-width: 600px;
+}
+
+.movie-details__content h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  padding-top: 20px;
+}
+
+.movie-details__content-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.movie-details__content-description-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.movie-details__content-description-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.Movies-recommendations {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.movies-recommendations__title {
+  font-family: 'Lato', sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.movies-recommendations__name-link {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.movies-recommendations__name {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.movies-recommendations__name-link:hover {
+  color: #ED1B24;
+  transition: all 2s;
+}
+
+.swiper-slide,
+swiper-slide {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: #f1f1f1;
+  width: 20px;
+  height: 20px;
+}
 
 .footer__wrapper {
   display: flex;
