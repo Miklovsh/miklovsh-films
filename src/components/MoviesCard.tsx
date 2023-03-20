@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 
-const MoviesCard = () => {
+const MoviesCard:React.FC = () => {
 
   return (
     <div className="Movies-сard">
