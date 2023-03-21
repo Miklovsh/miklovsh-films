@@ -24,7 +24,7 @@ const Main: React.FC = () => {
   return (
     <div className="Main">
       <div className="main__wrapper">
-        {movies.map((movie, index) => {
+        {movies.map((movie: object, index: number) => {
           return <MoviesCard key={index} {...movie} />
         })}
       </div>
