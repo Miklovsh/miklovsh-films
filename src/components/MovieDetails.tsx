@@ -1,8 +1,9 @@
 import '../App.css';
 import MoviesRecommendations from './MoviesRecommendations';
 
-
 const MovieDetails = () => {
+
+  // const url = `https://www.themoviedb.org/t/p/w300_and_h450_bestv2/movie.poster_path`
 
   return (
     <div className="Movie-details">
@@ -11,7 +12,7 @@ const MovieDetails = () => {
           <img src="./test-detail.jpg" alt="poster" />
         </div>
         <div className="movie-details__content">
-          <h1 className="movie-details__content-title">Shark Side of the Moon (2022)</h1>
+          <h1 className="movie-details__content-title">435</h1>
           <h4 className="movie-details__content-date">Реліз - 12/08/2022</h4>
           <h4 className="movie-details__content-category">Категорія: Бойовик, Фантастика, Трилер, Жахи</h4>
           <h4 className="movie-details__content-evaluation">Оцінка - 6.5</h4>

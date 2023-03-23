@@ -2,6 +2,7 @@ import { MovieAction, MoviesActionTypes, MovieState } from "../type/movie"
 
 const initialState: MovieState = {
   movies: [],
+  page: 1,
   loading: false,
   error: null
 }
@@ -9,11 +10,13 @@ const initialState: MovieState = {
 export const movieReducer = (state = initialState, action: MovieAction): MovieState => {
   switch (action.type) {
     case MoviesActionTypes.FETCH_MOVIES:
-      return { loading: true, error: null, movies: [] }
+      return { ...state, loading: true }
     case MoviesActionTypes.FETCH_MOVIES_SUCCESS:
-      return { loading: false, error: null, movies: action.payload }
+      return { ...state, loading: false, movies: action.payload }
     case MoviesActionTypes.FETCH_MOVIES_ERROR:
-      return { loading: false, error: action.payload, movies: [] }
+      return { ...state, loading: false, error: action.payload }
+    case MoviesActionTypes.SET_MOVIES_PAGE:
+      return { ...state, page: action.payload }
     default:
       return state
   }

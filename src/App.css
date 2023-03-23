@@ -133,6 +133,32 @@ body {
   margin-bottom: 50px;
 }
 
+.main__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main__pagination-number {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  color: #f1f1f1;
+  border: 2px solid #ffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 20px;
+  text-align: center;
+  background-color: black;
+  cursor: pointer;
+}
+
+.pagination-active {
+  border: 2px solid #ED1B24;
+  color: #ED1B24;
+}
+
 .movies-card__wrapper {
   display: flex;
   flex-direction: column;
