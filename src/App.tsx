@@ -9,14 +9,13 @@ import { Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
 
-
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="movie/:id" element={<MovieDetails />} />
-        <Route path="favorites" element={<MoviesFavorites />} />
+        <Route path="/" element={<Main/>} />
+        <Route path="movie/:id" element={<MovieDetails/>} />
+        <Route path="favorites" element={<MoviesFavorites/>} />
       </Routes>
       <Footer />
     </div>

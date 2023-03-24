@@ -263,6 +263,15 @@ body {
   padding-top: 10px;
 }
 
+.movie-details__content-categories {
+  display: flex;
+  align-items: center;
+}
+
+.movie-details__content-category+.movie-details__content-category {
+  margin-left: 4px;
+}
+
 .movie-details__content-description-title {
   font-family: 'Lato', sans-serif;
   font-size: 28px;
