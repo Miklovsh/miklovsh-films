@@ -123,6 +123,10 @@ body {
   min-height: calc(100vh - 74px);
 }
 
+.recommendation{
+  min-height: calc(100vh - 240px);
+}
+
 .main__wrapper,
 .movies-favorites__wrapper {
   display: flex;

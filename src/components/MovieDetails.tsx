@@ -30,7 +30,7 @@ const MovieDetails: React.FC = () => {
   return (
     <div className="Movie-details">
       {movies.map(movie => {
-        if (id == movie.id) {
+        if (id == movie.id ) {
           return <div className="movie-details__wrapper" key={movie.id}>
             <div className="movie-details__poster">
               <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movie.poster_path}`} alt="poster" />
@@ -43,7 +43,7 @@ const MovieDetails: React.FC = () => {
                 {genres.map(gener => {
                   for (let i = 0; i < movie.genre_ids.length; i++) {
                     if (movie.genre_ids[i] === gener.id) {
-                      return <h4 className="movie-details__content-category">{`${gener.name}`}</h4>
+                      return <h4 className="movie-details__content-category">{gener.name}</h4>
                     }
                   }
                 })}
@@ -55,7 +55,7 @@ const MovieDetails: React.FC = () => {
           </div>
         }
       })}
-      {/* <MoviesRecommendations /> */}
+      <MoviesRecommendations />
     </div>
   );
 }

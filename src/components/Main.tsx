@@ -27,9 +27,9 @@ const Main: React.FC = () => {
   return (
     <div className="Main">
       <div className="main__wrapper">
-        {movies.map((movie: object, index: number) => {
-          return <MoviesCard key={index} {...movie} />
-        })}
+        {movies.map((movie: any) => 
+          <MoviesCard key={movie.id} {...movie} />
+        )}
       </div>
       <div className="main__pagination">
         {pages.map(p =>
