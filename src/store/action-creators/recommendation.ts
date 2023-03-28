@@ -6,7 +6,7 @@ export const fetchRecommendations = (): any => {
   return async (dispatch: Dispatch<RecommendationAction>) => {
     try {
       dispatch({ type: RecommendationsActionTypes.FETCH_RECOMMENDATIONS })
-      const response = await axios.get('https://api.themoviedb.org/3/tv/top_rated?api_key=ebddff987af3641a51115c7e7984a474&language=en-US&page=1')
+      const response = await axios.get('https://api.themoviedb.org/3/tv/top_rated?api_key=ebddff987af3641a51115c7e7984a474&language=uk-UA&page=1')
       dispatch({ type: RecommendationsActionTypes.FETCH_RECOMMENDATIONS_SUCCESS, payload: response.data.results.slice(0, 10) })
       console.log(response.data.results);
     } catch (e) {

@@ -7,7 +7,7 @@ export const fetchMovies = (page = 1): any => {
   return async (dispatch: Dispatch<MovieAction>) => {
     try {
       dispatch({ type: MoviesActionTypes.FETCH_MOVIES })
-      const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=ebddff987af3641a51115c7e7984a474&language=en-US&page=${page}`, {
+      const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=ebddff987af3641a51115c7e7984a474&language=uk-UA&page=${page}`, {
         params: { _page: page }
       })
       dispatch({ type: MoviesActionTypes.FETCH_MOVIES_SUCCESS, payload: response.data.results.slice(0, 9) })
