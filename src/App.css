@@ -53,12 +53,13 @@ body {
   text-align: center;
 }
 
-.header__search {
+.main__search {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.header__search-btn {
+.main__search-btn {
   width: 40px;
   height: 40px;
   padding: 5px;
@@ -67,12 +68,12 @@ body {
   cursor: pointer;
 }
 
-.header__search-btn svg {
+.main__search-btn svg {
   width: 25px;
   height: 25px;
 }
 
-.header__search-input {
+.main__search-input {
   font-family: 'Rowdies', cursive;
   font-weight: 600;
   font-size: 22px;
@@ -90,7 +91,7 @@ body {
   color: #ED1B24;
 }
 
-.header__search-input::placeholder {
+.main__search-input::placeholder {
   font-family: 'Rowdies', cursive;
   font-weight: 600;
   font-size: 22px;

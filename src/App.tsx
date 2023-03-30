@@ -9,16 +9,15 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 import Context from './Context';
 
-
 const App: React.FC = () => {
 
   const [movies, setMovies] = useState<[]>([]);
   const [genres, setGenres] = useState<[]>([]);
   const [recommendations, setRecommendations] = useState<[]>([]);
+  const [query, setQuery] = useState<string>('');
   const [page, setPage] = useState<number>(1);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<null | string>(null);
-
 
   async function fetchMovies(page: number = 1) {
     try {
@@ -62,6 +61,18 @@ const App: React.FC = () => {
     fetchRecommendations()
   }, [])
 
+
+
+  const searchMovies = (e: any) => {
+    if (e) {
+      axios.get(`https://api.themoviedb.org/3/search/movie?api_key=ebddff987af3641a51115c7e7984a474&language=uk-UA&query=${query}`).then((response) => {
+        setMovies(response.data.results);
+      }, (error) => {
+        setError('По вашому запиту нічого не знайдено!')
+      })
+    }
+  }
+
   const value = {
     movies,
     genres,
@@ -71,7 +82,10 @@ const App: React.FC = () => {
     loading,
     setLoading,
     error,
-    setError
+    setError,
+    searchMovies,
+    query,
+    setQuery
   }
 
   return (
