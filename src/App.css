@@ -10,6 +10,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: calc(100vh - 74px);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.error {
+  font-family: 'Rowdies', cursive;
+  font-size: 36px;
+  line-height: 40px;
+  color: #f1f1f1;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .Header,
@@ -52,6 +71,7 @@ body {
   color: #ED1B24;
   text-align: center;
 }
+
 
 .main__search {
   display: flex;
@@ -100,6 +120,7 @@ body {
   text-transform: uppercase;
   color: #ED1B24;
 }
+
 
 .Main,
 .Movie-details {

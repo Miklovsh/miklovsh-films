@@ -9,15 +9,6 @@ const MovieDetails: React.FC = () => {
   const value = useContext(Context);
   const { id } = useParams();
 
-  if (value.loading) {
-    value.setLoading(true);
-    return <h1>Завантаження...</h1>
-  }
-
-  if (value.error) {
-    value.setError('Виникла помилка, спробуйте трохи пізніше!')
-    return <h1>{value.error}</h1>
-  }
 
   return (
     <div className="Movie-details">

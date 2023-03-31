@@ -11,20 +11,14 @@ import Context from '../Context';
 const MoviesRecommendations: React.FC = () => {
   const value = useContext(Context);
 
-  if (value.loading) {
-    value.setLoading(true);
-    return <h1>Завантаження...</h1>
-  }
-
-  if (value.error) {
-    value.setError('Виникла помилка, спробуйте трохи пізніше!')
-    return <h1>{value.error}</h1>
-  }
 
   return (
     <div className="Movies-recommendations">
       <div className="movies-recommendations__wrapper">
         <h3 className="movies-recommendations__title">Рекомендації</h3>
+        {value.errorRecomend && (
+          <h1 className="error">{value.errorRecomend}</h1>
+        )}
         <Swiper
           slidesPerView={5}
           spaceBetween={10}
