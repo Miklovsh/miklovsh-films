@@ -70,6 +70,8 @@ const App: React.FC = () => {
       }, (errorSearch) => {
         setErrorSearch('При пошуку виникла помилка!');
       })
+    } if (query === '') {
+      setErrorSearch('Введіть назву фільму!');
     }
   }
 
