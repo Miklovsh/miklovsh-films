@@ -231,6 +231,11 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.movie-details__content-date,
+.movie-details__content-categories,
+.movie-details__content-evaluation {
   padding-top: 20px;
 }
 
@@ -312,6 +317,10 @@ body {
   transition: all 2s;
 }
 
+.swiper {
+  text-align: center;
+}
+
 .swiper-slide,
 swiper-slide {
   margin-top: 25px;
@@ -361,4 +370,193 @@ swiper-slide {
 .footer__name-link:hover {
   color: black;
   transition: all 2s;
+}
+
+@media screen and (max-width: 991px) {
+  .main__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .main__pagination-number {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 7px;
+    margin-left: 12px;
+  }
+
+  .error {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .movies-card__wrapper {
+    width: 320px;
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+
+  .movies-card__poster-img {
+    max-width: 100%;
+  }
+
+  .movies-card__title-link {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .movies-card__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .movies-recommendations__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .movie-details__home {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .movie-details__home svg {
+    width: 40px;
+    height: 15px;
+  }
+
+  .movie-details__poster img {
+    max-width: 100%;
+  }
+
+  .movie-details__wrapper {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .movie-details__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0px;
+    max-width: 100%;
+  }
+
+  .movie-details__content h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .movie-details__content-title {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .movie-details__content-description-title {
+    font-size: 26px;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__search-input {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 250px;
+    height: 20px;
+    padding: 12px;
+  }
+
+  .main__search-input::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main__search-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+  }
+
+  .main__pagination-number {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 4px;
+    margin-left: 6px;
+    border: none;
+  }
+
+  .error {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .movies-card__wrapper {
+    width: 270px;
+    margin-top: 25px;
+    padding: 10px;
+  }
+
+  .movies-card__poster-link {
+    text-align: center;
+  }
+
+  .movies-card__poster-img {
+    max-width: 80%;
+  }
+
+  .movies-card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer__name-label {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .footer__name-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .movies-recommendations__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .movies-recommendations__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+
+  .movie-details__content-title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .movie-details__content-categories {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .movie-details__content-description-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .movie-details__content-description-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

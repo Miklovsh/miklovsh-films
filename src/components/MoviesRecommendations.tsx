@@ -20,13 +20,33 @@ const MoviesRecommendations: React.FC = () => {
           <h1 className="error">{value.errorRecomend}</h1>
         )}
         <Swiper
-          slidesPerView={5}
-          spaceBetween={10}
           pagination={{
             clickable: true,
           }}
           modules={[Pagination]}
           className="mySwiper"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 15,
+            },
+            1280: {
+              slidesPerView: 5,
+              spaceBetween: 30,
+            },
+          }}
         >
           {value.recommendations.map((recomend: any) => {
             return <SwiperSlide>
